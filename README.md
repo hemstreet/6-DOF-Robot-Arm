@@ -1,6 +1,8 @@
 6 DOF Robot Arm Controls
 ===
 
+*** This is a work in progress ***
+
 <p align="center">
   <img src="/extras/Diagram.png" alt="Arm Diagram"/>
 </p>
