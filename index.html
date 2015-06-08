@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="utf-8">
+
+    <title>AngularJS / Arduino</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="http://code.angularjs.org/1.2.6/angular.min.js"></script>
+
+
+</head>
+
+<script>
+
+    function ArduinoCtrl($scope,
+                         $http)
+    {
+
+        $scope.setServo = function(analogID, value) {
+                var url = "http://yun.local/arduino/servo/" + analogID + "/" + value
+                $http.get(url);
+        }
+
+    }
+
+</script>
+
+<body>
+    <div ng-controller="ArduinoCtrl" class="container">
+        <button ng-click="setServo(5, 0)" class="btn">MoveServo(0)</button>
+        <button ng-click="setServo(5, 180)" class="btn">MoveServo(180)</button>
+    </div>
+</body>
+</html>
