@@ -17,12 +17,10 @@
     function ArduinoCtrl($scope,
                          $http)
     {
-
         $scope.setServo = function(analogID, value) {
                 var url = "http://yun.local/arduino/servo/" + analogID + "/" + value
                 $http.get(url);
         }
-
     }
 
 </script>

@@ -1,0 +1,19 @@
+{
+  "name": "robotHand",
+  "version": "1.0.0",
+  "description": "6 DOF Robot Arm Controls ",
+  "author" : "Jon Hemstreet",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemstreet/6-DOF-Robot-Arm.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemstreet/6-DOF-Robot-Arm/issues"
+  },
+  "homepage": "https://github.com/hemstreet/6-DOF-Robot-Arm",
+  "dependencies": {
+    "request": "latest"
+  }
+}
